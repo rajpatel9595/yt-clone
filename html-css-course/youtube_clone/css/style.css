@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom, #a60000, #FF4D4D, white); /* Gradient background */
+    font-family: 'Roboto', sans-serif; /* Font family */
+    display: flex; /* Centering content */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the forms */
+.signup-container {
+    width: 100%; /* Full width */
+    max-width: 450px; /* Maximum width for usability */
+    padding: 20px; /* Padding for the container */
+}
+
+/* Individual form card styling */
+.signup-card {
+    background-color: #fff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 40px; /* Internal padding */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Hover effect for form card */
+.signup-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Logo styles */
+.youtube-logo {
+    width: 120px; /* Logo width */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Header styles */
+h2 {
+    font-size: 24px; /* Increased font size */
+    margin: 0; /* Remove margin */
+    color: #333; /* Dark text color */
+}
+
+/* Paragraph styles */
+p {
+    color: #666; /* Text color for paragraphs */
+    margin-top: 5px; /* Space above paragraphs */
+    font-size: 15px; /* Slightly larger font size */
+}
+
+/* Form layout */
+.signup-form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack vertically */
+    gap: 20px; /* Space between inputs */
+    margin-top: 20px; /* Space above form */
+}
+
+/* Input group styles */
+.input-group {
+    position: relative; /* Positioning for input */
+    display: flex; /* Flexbox for input group */
+    flex-direction: column; /* Stack vertically */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Internal padding */
+    font-size: 16px; /* Font size */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 6px; /* Rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+/* Input focus styles */
+input:focus {
+    border-color: #1a73e8; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Shadow on focus */
+}
+
+/* Placeholder styles */
+input::placeholder {
+    color: #777; /* Placeholder color */
+}
+
+/* Password hint styles */
+.password-hint {
+    font-size: 12px; /* Font size for hint */
+    color: #999; /* Hint text color */
+    text-align: left; /* Align text to the left */
+}
+
+/* Sign Up button styles */
+.signup-button {
+    background: linear-gradient(90deg, #1a73e8, #1a8ae8); /* Gradient background */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 14px; /* Internal padding */
+    border-radius: 6px; /* Rounded corners */
+    font-weight: bold; /* Bold font */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s, transform 0.3s; /* Transition effects */
+    font-size: 16px; /* Font size */
+    letter-spacing: 0.5px; /* Space between letters */
+}
+
+/* Hover effect for Sign Up button */
+.signup-button:hover {
+    background: linear-gradient(90deg, #155ab6, #1a73e8); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* YouTube Login button styles */
+.youtube-login-button {
+    background: #ff0000; /* YouTube red */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 14px; /* Internal padding */
+    border-radius: 6px; /* Rounded corners */
+    font-weight: bold; /* Bold font */
+    cursor: pointer; /* Pointer on hover */
+    transition: background 0.3s, transform 0.3s; /* Transition effects */
+    font-size: 16px; /* Font size */
+    letter-spacing: 0.5px; /* Space between letters */
+}
+
+/* Hover effect for YouTube Login button */
+.youtube-login-button:hover {
+    background: #cc0000; /* Darker YouTube red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Alternate link styles */
+.alternate-link {
+    margin-top: 20px; /* Space above alternate link */
+}
+
+/* Alternate link anchor styles */
+.alternate-link a {
+    color: #1a73e8; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: 500; /* Medium font weight */
+}
+
+/* Hover effect for alternate link */
+.alternate-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #155ab6; /* Change color on hover */
+}
+
+

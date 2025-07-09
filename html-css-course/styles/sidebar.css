@@ -1,0 +1,72 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+    font-size: 10px;
+  } 
+
+
+
+  /* Dark mode styling */
+.dark-mode .sidebar {
+  background-color: black; /* Dark sidebar background */
+}
+
+.dark-mode .sidebar-link {
+  color: white; /* Light text color for links */
+}
+
+.dark-mode .sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent hover effect in dark mode */
+}
+
+/* Optional: Adjust text color on hover */
+.dark-mode .sidebar-link:hover div {
+  color: white; /* Ensure text is visible on hover */
+}
+
+/* Dark mode specific styles */
+
+.dark-mode .img{
+    filter: brightness(0) invert(1); /* Invert colors for dark mode */
+}
+
+
+/* Sidebar icons styling for dark mode */
+.dark-mode .sidebar-link img {
+  filter: invert(1); /* Invert colors */
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Adjust hover effect to be smoother and match dark mode */
+.dark-mode .sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten the hover color */
+  transition: background-color 0.2s ease;
+}
+

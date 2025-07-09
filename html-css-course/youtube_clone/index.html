@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-container">
+        <!-- Login Form -->
+        <div id="login" class="signup-card"> <!-- Changed class to signup-card -->
+            <img src="youtube-logo.svg" alt="YouTube Logo" class="youtube-logo">
+            <h2>Sign in to YouTube</h2>
+            <p>to continue to YouTube</p>
+            <form action="php/login.php" method="post" class="signup-form">
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <button type="submit" name="login" class="signup-button"> Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup" class="signup-card" style="display: none;"> <!-- Changed class to signup-card -->
+            <img src="youtube-logo.svg" alt="YouTube Logo" class="youtube-logo">
+            <h2>Create your account</h2>
+            <p>to continue to YouTube</p>
+            <form action="php/register.php" method="post" class="signup-form">
+                <div class="input-group">
+                    <input type="text" name="fName" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="lName" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <p class="password-hint">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+                <button type="submit" name="register" class="signup-button">Next</button>
+            </form>
+            <div class="alternate-link">
+                <p>Already have an account? <a href="#" onclick="toggleForm()">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle between forms -->
+    <script>
+        function toggleForm() {
+            var loginForm = document.getElementById('login');
+            var signupForm = document.getElementById('signup');
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
